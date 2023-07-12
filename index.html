@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button-cont{
+            display: flex;
+            margin-top: 20px;
+            justify-content: space-around;
+        }
+        .button{
+            width: 100px;
+            height: 50px;
+            border: none;
+            background-color: gray;
+            color: black;
+            cursor: pointer;
+            transition: backgroud-color 0.3, color 0.3s;
+        }
+        button:hover{
+            background-color: olivedrab;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h3></h3>
+<div class="button-cont">
+    <!-- user group -->
+    <button onclick="createUser()" class="button">Register</button>
+    <button onclick="loginUser()" class="button">Login</button>
+    <button onclick="deleteUser()" class="button">Delete</button>
+    <br>
+    <!-- massage group -->
+    <button onclick="sendMessage()" class="button">Отправить сообщение</button>
+    <button onclick="deleteMessage()" class="button">Удалить сообщение</button>
+</div>
+    <script src="./main.js"></script>
+</body>
+</html>
